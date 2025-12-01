@@ -161,10 +161,25 @@ img {
     border-radius: 8px;
 }
 .slide:nth-child(1) {
-    background-image: url("images/slides/pexels-ifreestock-619418.jpg") ;
-    color: orange;
+    background-image: url("images/slides/christmas.jpg") ;
+    color:white;
+    text-shadow: 2px 2px 2px var(--rich-black);
+} 
+.slide:nth-child(2){
+    background-image: url("images/slides/Brown_shoes.png");
+    color:white;
+    text-shadow: 2px 2px 2px var(--rich-black);
 }
-
+.slide:nth-child(3){
+    background-image: url("images/slides/chetnut_shoes.png");
+    color:white;
+    text-shadow: 2px 2px 2px var(--rich-black);
+}
+.slide:nth-child(4){
+    background-image: url("images/slides/blue_shoes.png");
+    color:white;
+    text-shadow: 2px 2px 2px var(--rich-black);
+}
 nav a {
     text-decoration: none;
 }
@@ -231,14 +246,19 @@ nav a {
     max-width: 80vw;
 }
 .banner2 {
-    min-height: 25vh;
     display: flex;
+    min-height: 30vh;
+    /* width: 150vw; */
+    
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* background: linear-gradient( 45deg,brown,yellow,green ); */
-    background: radial-gradient(circle,brown,yellow);
+    align-items: center; 
+    background-image: url("images/slides/summer.jpg");
+    /* background-position: center; */
     margin-top: 1em;
+    color: white;
+    border-right: 20px;
+  
 }
 .contact-form {
     display: flex;
