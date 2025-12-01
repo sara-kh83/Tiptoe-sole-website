@@ -161,17 +161,17 @@ img {
     border-radius: 8px;
 }
 .slide:nth-child(1) {
-    background-image: url("images/slides/christmas.jpg") ;
+    background-image: url("images/slides/Christmas.png") ;
     color:white;
     text-shadow: 2px 2px 2px var(--rich-black);
 } 
 .slide:nth-child(2){
-    background-image: url("images/slides/Brown_shoes.png");
+    background-image: url("images/slides/brown_shoes.png");
     color:white;
     text-shadow: 2px 2px 2px var(--rich-black);
 }
 .slide:nth-child(3){
-    background-image: url("images/slides/chetnut_shoes.png");
+    background-image: url("images/slides/chestnut_shoes.png");
     color:white;
     text-shadow: 2px 2px 2px var(--rich-black);
 }
@@ -253,7 +253,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    background-image: url("images/slides/summer.jpg");
+    background-image: url("images/slides/summer.png");
     /* background-position: center; */
     margin-top: 1em;
     color: white;
