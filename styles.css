@@ -1,15 +1,23 @@
 :root {
     --alabaster: hsla(77, 11%, 87%, 1);
-    --timberwolf: hsla(70, 12%, 81%, 1);
+    --timberwolf: rgb(210, 212, 201);
     --ash-gray: hsla(98, 6%, 73%, 1);
     --cadet-gray: hsla(180, 6%, 56%, 1);
     --hookers-green: hsla(169, 10%, 25%, 1);
-    color-scheme: light dark;
+    
+    --light-blue: hsl(176, 62%, 93%);
+    --light-seafoam: hsl(176, 26%, 81%);
+    --gray:hsl(176, 2%, 61%);
+    --midnight-grey: hsl(207, 1%, 18%);
+    
+    
+
+    color-scheme: light;
 }
 
 body {
-    background-color: var(--alabaster);
-    color: var(--hookers-green);
+    background-color: var(--light-blue);
+    color: var(--midnight-grey);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     min-height: 100vh;
@@ -64,7 +72,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--cadet-gray);
+    background-color: var(--gray);
     flex-wrap: wrap;
     padding-left: 15px;
     padding-right: 15px;
@@ -84,12 +92,12 @@ img {
 }
 
 .navigation a {
-    color: var(--hookers-green);
+    color: var(--midnight-grey);
     text-decoration: none;
     padding: 10px;
 }
 .navigation a:hover {
-    color: var(--alabaster);
+    color: var(--light-blue);
 }
 
 .nav-button {
@@ -97,7 +105,7 @@ img {
     width: 44px;
     height: 44px;
     border-style: solid;
-    border-color: var(--alabaster);
+    border-color: var(--light-blue);
     border-radius: 5px;
     display: none;
 }
@@ -123,7 +131,7 @@ img {
 #search button {
     padding: 10px;
     border: solid 1px;
-    background-color: var(--hookers-green);
+    background-color: var(--midnight-grey);
     border-radius: 0px 5px 5px 0px;
 }
 
@@ -144,7 +152,7 @@ img {
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    background-color: var(--timberwolf);
+    background-color: var(--light-seafoam);
     background-size: cover;
     background-position: center;
 }
@@ -155,9 +163,9 @@ img {
 }
 .slide button {
     padding: 10px;
-    background-color: var(--hookers-green);
+    background-color: var(--midnight-grey);
     min-width: 300px;
-    border: solid 1px var(--alabaster);
+    border: solid 1px var(--light-blue);
     border-radius: 8px;
 }
 .slide:nth-child(1) {
@@ -188,7 +196,7 @@ nav a {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: var(--cadet-gray);
+    background-color: var(--gray);
     padding: 20px 30px;
     margin-top: 30px;
 }
@@ -197,7 +205,7 @@ nav a {
     flex-direction: column;
 }
 .footer-nav a, .social-nav a, .legal-nav a {
-    color: var(--alabaster);
+    color: var(--light-blue);
     padding: 5px;
 }
 .social-nav {
@@ -229,14 +237,14 @@ nav a {
 .card {
     flex: 1;
     background-color: white;
-    border: 1px solid var(--cadet-gray);
+    border: 1px solid var(--gray);
     border-radius: 10px;
     overflow: hidden;
 }
 .card button {
     min-width: 100%;
     padding: 12px;
-    border: 1px solid var(--cadet-gray);
+    border: 1px solid var(--gray);
     border-radius: 5px;
 }
 .main-content {
@@ -277,6 +285,6 @@ nav a {
     min-width: auto;
 }
 .contact-details a {
-    color: var(--hookers-green);
+    color: var(--midnight-grey);
     font-size: medium;
 }
