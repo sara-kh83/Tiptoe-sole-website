@@ -1,16 +1,14 @@
 :root {
-    
-    --light-blue: hsl(176, 62%, 96%);        
-    --light-seafoam: hsl(176, 40%, 90%);     
-    --gray: hsl(0, 0%, 60%);                
-    --midnight-grey: hsl(0, 0%, 18%);       
-    --rich-black: hsl(0, 0%, 8%);            
-    --brand-primary: hsl(176, 28%, 25%);        
-    --brand-primary-soft: hsl(176, 35%, 85%);   
-    --brand-accent: hsl(176, 45%, 35%);         
-    --text-main: var(--midnight-grey);
-    --text-on-dark: #fdfdfd;
-    --border-subtle: hsl(176, 20%, 88%);
+    --soft-aqua: hsl(176, 62%, 96%);
+    --seafoam: hsl(176, 40%, 90%);
+    --medium-grey: hsl(0, 0%, 60%);
+    --dark-grey: hsl(0, 0%, 18%);
+    --blackish: hsl(0, 0%, 8%);
+    --dark-green: hsl(176, 28%, 25%);
+    --light-green: hsl(176, 35%, 85%);
+    --mid-green: hsl(176, 45%, 35%);
+    --text-on-dark: hsl(0, 0%, 99%);
+    --border-light: hsl(176, 20%, 88%);
     --link: hsl(176, 35%, 30%);
     --link-hover: hsl(176, 45%, 25%);
     --link-visited: hsl(176, 25%, 22%);
@@ -18,7 +16,7 @@
 }
 
 body {
-    background-color: var(--light-blue);
+    background-color: var(--soft-aqua);
     color: var(--text-main);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -27,7 +25,6 @@ body {
     grid-template-rows: auto auto 1fr auto;
 }
 
-/* Links */
 a {
     font-size: 150%;
 }
@@ -45,13 +42,12 @@ a:hover {
 }
 
 a:active {
-    color: var(--brand-accent);
+    color: var(--mid-green);
 }
 
-/* Headings */
 h1 {
     color: var(--text-on-dark);
-    background-color: var(--rich-black);
+    background-color: var(--blackish);
 }
 
 img {
@@ -76,11 +72,11 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--brand-primary-soft);
+    background-color: var(--light-green);
     flex-wrap: wrap;
     padding-left: 15px;
     padding-right: 15px;
-    border-bottom: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .logo {
@@ -106,7 +102,7 @@ img {
 
 .navigation a:hover {
     color: var(--text-on-dark);
-    background-color: var(--brand-primary);
+    background-color: var(--dark-green);
 }
 
 .nav-button {
@@ -114,7 +110,7 @@ img {
     width: 44px;
     height: 44px;
     border-style: solid;
-    border-color: var(--brand-primary);
+    border-color: var(--dark-green);
     border-radius: 5px;
     display: none;
 }
@@ -132,15 +128,15 @@ img {
 
 #search input {
     padding: 10px;
-    border: solid 1px var(--border-subtle);
+    border: solid 1px var(--border-light);
     border-radius: 5px 0px 0px 5px;
     flex: 1;
 }
 
 #search button {
     padding: 10px;
-    border: solid 1px var(--brand-primary);
-    background-color: var(--brand-primary);
+    border: solid 1px var(--dark-green);
+    background-color: var(--dark-green);
     color: var(--text-on-dark);
     border-radius: 0px 5px 5px 0px;
 }
@@ -162,7 +158,7 @@ img {
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    background-color: var(--light-seafoam);
+    background-color: var(--seafoam);
     background-size: cover;
     background-position: center;
 }
@@ -174,32 +170,32 @@ img {
 
 .slide button {
     padding: 10px;
-    background-color: var(--brand-accent);
+    background-color: var(--mid-green);
     color: var(--text-on-dark);
     min-width: 300px;
-    border: solid 1px var(--brand-accent);
+    border: solid 1px var(--mid-green);
     border-radius: 8px;
 }
 
 .slide:nth-child(1) {
     background-image: url("images/slides/Christmas.png");
     color: var(--text-on-dark);
-    text-shadow: 2px 2px 2px var(--rich-black);
+    text-shadow: 2px 2px 2px var(--blackish);
 }
 .slide:nth-child(2) {
     background-image: url("images/slides/brown_shoes.png");
     color: var(--text-on-dark);
-    text-shadow: 2px 2px 2px var(--rich-black);
+    text-shadow: 2px 2px 2px var(--blackish);
 }
 .slide:nth-child(3) {
     background-image: url("images/slides/chestnut_shoes.png");
     color: var(--text-on-dark);
-    text-shadow: 2px 2px 2px var(--rich-black);
+    text-shadow: 2px 2px 2px var(--blackish);
 }
 .slide:nth-child(4) {
     background-image: url("images/slides/blue_shoes.png");
     color: var(--text-on-dark);
-    text-shadow: 2px 2px 2px var(--rich-black);
+    text-shadow: 2px 2px 2px var(--blackish);
 }
 
 nav a {
@@ -211,7 +207,7 @@ nav a {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: var(--brand-primary);
+    background-color: var(--dark-green);
     padding: 20px 30px;
     margin-top: 30px;
     color: var(--text-on-dark);
@@ -225,7 +221,7 @@ nav a {
 .footer-nav a,
 .social-nav a,
 .legal-nav a {
-    color: var(--light-seafoam);
+    color: var(--seafoam);
     padding: 5px;
 }
 
@@ -262,7 +258,7 @@ nav a {
 .card {
     flex: 1;
     background-color: white;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-light);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -270,9 +266,9 @@ nav a {
 .card button {
     min-width: 100%;
     padding: 12px;
-    border: 1px solid var(--brand-primary);
+    border: 1px solid var(--dark-green);
     border-radius: 5px;
-    background-color: var(--brand-primary);
+    background-color: var(--dark-green);
     color: var(--text-on-dark);
 }
 
@@ -292,7 +288,7 @@ nav a {
     background-image: url("images/slides/summer.jpg");
     margin-top: 1em;
     color: var(--text-on-dark);
-    text-shadow: 1px 1px 2px var(--rich-black);
+    text-shadow: 1px 1px 2px var(--blackish);
     border-right: 20px;
 }
 
@@ -314,13 +310,13 @@ nav a {
 
 .contact-form button {
     min-width: auto;
-    background-color: var(--brand-primary);
+    background-color: var(--dark-green);
     color: var(--text-on-dark);
-    border: 1px solid var(--brand-primary);
+    border: 1px solid var(--dark-green);
     border-radius: 5px;
 }
 
 .contact-details a {
-    color: var(--brand-primary);
+    color: var(--dark-green);
     font-size: medium;
 }
