@@ -24,8 +24,7 @@
     #search button {
         display: none;
     }
-
-    /* drop-down menu */
+    
     #main {
         order: 3;
         flex-direction: column;
